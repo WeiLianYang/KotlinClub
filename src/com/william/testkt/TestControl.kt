@@ -125,14 +125,58 @@ fun main(args: Array<String>) {
     }
 
     // 4. kotlin 嵌套循环
-    val outerList = arrayListOf("outer 1", "outer 2", "outer 3")
-    val innerList = arrayListOf("inner 1", "inner 2", "inner 3")
-    for (outer in outerList) {
-        println(outer)
-        for (inner in innerList) {
-            print("$inner, ")
+    val outerList = arrayListOf("outer0", "outer1", "outer2")
+    val innerList = arrayListOf("inner0", "inner1", "inner2")
+    for (outer in 0 until outerList.size) {
+        for (inner in 0 until innerList.size) {
+            println("${outerList[outer]}, ${innerList[inner]}")
         }
-        println()
+    }
+
+    // 5. kotlin 控制循环结构
+    // kotlin 使用 break 结束循环
+    for (i in 0..2) {
+        if (i == 1) {
+            break
+        }
+    }
+
+    // kotlin 结束外层循环 使用限定符标签 名称随意
+    outer@ for (outer in 0 until outerList.size) {
+        for (inner in 0 until innerList.size) {
+            if (inner == 1) {
+                break@outer
+            }
+            println("${outerList[outer]}, ${innerList[inner]}")
+        }
+    }
+
+    // kotlin 使用 continue 跳过本次循环
+    for (i in 0..2) {
+        if (i == 1) {
+            continue
+        }
+        println(i)
+    }
+
+    // kotlin 跳过外层循环 使用限定符标签 名称随意
+    outer@ for (outer in 0 until outerList.size) {
+        for (inner in 0 until innerList.size) {
+            if (inner == 1) {
+                continue@outer
+            }
+            println("${outerList[outer]}, ${innerList[inner]}")
+        }
+    }
+
+    // kotlin 使用 return 结束循环，不论嵌套了多少层
+    for (outer in 0 until outerList.size) {
+        for (inner in 0 until innerList.size) {
+            if (inner == 1) {
+                return
+            }
+            println("${outerList[outer]}, ${innerList[inner]}")
+        }
     }
 
 }
