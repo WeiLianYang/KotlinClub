@@ -25,7 +25,7 @@ fun main(args: Array<String>) {
     var x = -0b11111111
     println(x)
 
-    // 十进制
+    // 十六进制
     val tenVal1 = 0x132
     val tenVal2 = 0X1d
 
