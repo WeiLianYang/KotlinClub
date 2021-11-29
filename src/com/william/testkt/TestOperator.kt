@@ -22,7 +22,7 @@ fun main(args: Array<String>) {
 
     println(field) // 1
 
-    // 2. kotlin 双目运算
+    // 2. kotlin 双目算术运算符
     var a = 3
     val b = 4
     var result = 0
@@ -49,7 +49,7 @@ fun main(args: Array<String>) {
     a *= b // 12, 同 a = a * b
     a /= b // 3, 同 a = a / b
 
-    // kotlin 比较运算符
+    // 4. kotlin 比较运算符
     println(a > b) // false，同 a.compareTo(b) > 0
     println(a < b) // true，同 a.compareTo(b) < 0
     println(a >= b) // false，同 a.compareTo(b) >= 0
@@ -57,7 +57,7 @@ fun main(args: Array<String>) {
 
     println("-----------------------------")
 
-    // 4. kotlin 位运算
+    // 5. kotlin 位运算
     // kotlin 按位与：操作数的两位同时为1，才为1
     println(a.and(b)) // 0
     // kotlin 按位或：操作数的两位只要一个为1，即为1
@@ -75,7 +75,7 @@ fun main(args: Array<String>) {
 
     println("-----------------------------")
 
-    // 5. kotlin 区间运算符
+    // 6. kotlin 区间运算符
     // kotlin 定义闭区间
     var range = 1..3 // [1,3] 范围是 1-3，含边界
     for (ele in range) {
@@ -106,7 +106,7 @@ fun main(args: Array<String>) {
 
     println("-----------------------------")
 
-    // 6. kotlin 重载运算符
+    // 7. kotlin 重载运算符
     // kotlin 重载单目运算符
     var cla = OperatorClass(1, 1)
     println(-cla) // 调用的是 unaryMinus() OperatorClass(a=-1, b=-1)
