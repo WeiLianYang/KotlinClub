@@ -88,8 +88,8 @@ fun main(args: Array<String>) {
     println(result) // 良好
 
 
-    val anyObj: Any = 100
     // 4. when 类型匹配
+    val anyObj: Any = 100
     result = when (anyObj) {
         is Int -> {
             "anyObj is int type"
@@ -141,7 +141,7 @@ fun main(args: Array<String>) {
         }
     }
 
-    // kotlin 结束外层循环 使用限定符标签 名称随意
+    // 6. kotlin 结束外层循环 使用限定符标签 名称随意
     outer@ for (outer in 0 until outerList.size) {
         for (inner in 0 until innerList.size) {
             if (inner == 1) {
@@ -151,7 +151,7 @@ fun main(args: Array<String>) {
         }
     }
 
-    // kotlin 使用 continue 跳过本次循环
+    // 7. kotlin 使用 continue 跳过本次循环
     for (i in 0..2) {
         if (i == 1) {
             continue
@@ -159,7 +159,7 @@ fun main(args: Array<String>) {
         println(i)
     }
 
-    // kotlin 跳过外层循环 使用限定符标签 名称随意
+    // 8. kotlin 跳过外层循环 使用限定符标签 名称随意
     outer@ for (outer in 0 until outerList.size) {
         for (inner in 0 until innerList.size) {
             if (inner == 1) {
@@ -169,7 +169,7 @@ fun main(args: Array<String>) {
         }
     }
 
-    // kotlin 使用 return 结束循环，不论嵌套了多少层
+    // 9. kotlin 使用 return 结束循环，不论嵌套了多少层
     for (outer in 0 until outerList.size) {
         for (inner in 0 until innerList.size) {
             if (inner == 1) {
