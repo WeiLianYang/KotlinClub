@@ -1,7 +1,29 @@
-# TestKotlin 
-# This is a learning Demo of Kotlin, and I will update the code of Kotlin on a regular basis.
+# KotlinDemo
 
-## Kotlin项目开发规范总结：
+## 一、目录 
+
+### 1. Kotlin 基本数据类型
+- [Blog 介绍](https://blog.csdn.net/java_android_man/article/details/80243772)
+- [Demo 示例](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestBaseType.kt)
+
+
+### 2. Kotlin 运算符
+- [Blog 介绍](https://blog.csdn.net/java_android_man/article/details/121615270)
+- [Demo 示例](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestOperator.kt)
+
+
+### 3. Kotlin 循环、流程控制：if-else、when、for-in
+- [Blog 介绍](https://blog.csdn.net/java_android_man/article/details/121620253)
+- [Demo 示例](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestControl.kt)
+
+
+### 4. Kotlin 数组及常用方法
+- [Blog 介绍](https://blog.csdn.net/java_android_man/article/details/121643759)
+- [Demo 示例](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestArray.kt)
+
+<br>
+
+## 二、Kotlin项目开发规范总结：
 #### 1. 返回数据模型中的字段除了数值型和Boolean以外，其他类型字段需要用可空声明；对于数值型和Boolean的字段可以定为不可空类型，但是需要赋值，方便在使用处调用。如果接口不返回这个字段，则GSON不会解析，如果字段返回null，则得到的是声明的初始值；
 例如下面的数据类：
 ```kotlin
