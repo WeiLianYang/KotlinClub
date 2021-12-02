@@ -3,23 +3,23 @@
 ## 一、目录 
 
 ### 1. Kotlin 基本数据类型
-- [Blog 介绍](https://blog.csdn.net/java_android_man/article/details/80243772)
-- [Demo 示例](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestBaseType.kt)
+- [Blog link](https://blog.csdn.net/java_android_man/article/details/80243772)
+- [TestBaseType.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestBaseType.kt)
 
 
 ### 2. Kotlin 运算符
-- [Blog 介绍](https://blog.csdn.net/java_android_man/article/details/121615270)
-- [Demo 示例](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestOperator.kt)
+- [Blog link](https://blog.csdn.net/java_android_man/article/details/121615270)
+- [TestOperator.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestOperator.kt)
 
 
 ### 3. Kotlin 循环、流程控制：if-else、when、for-in
-- [Blog 介绍](https://blog.csdn.net/java_android_man/article/details/121620253)
-- [Demo 示例](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestControl.kt)
+- [Blog link](https://blog.csdn.net/java_android_man/article/details/121620253)
+- [TestControl.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestControl.kt)
 
 
 ### 4. Kotlin 数组及常用方法
-- [Blog 介绍](https://blog.csdn.net/java_android_man/article/details/121643759)
-- [Demo 示例](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestArray.kt)
+- [Blog link](https://blog.csdn.net/java_android_man/article/details/121643759)
+- [TestArray.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestArray.kt)
 
 <br>
 
