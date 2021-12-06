@@ -44,6 +44,10 @@ fun main() {
     Thread(runnable).start()
     Thread(runnable2).start()
 
+    // 调用单例类的属性和方法
+    println(DemoManager.field)
+    DemoManager.method()
+
 
     // 三、kotlin 枚举
 
@@ -84,13 +88,14 @@ fun main() {
     // map 委托
     // 只读属性对外暴露 Map
     val delegate1 = DelegateMap(mapOf("key1" to 1, "key2" to "str", "key3" to true))
-    val map = delegate1.map
+    // 相当于调用 ReadOnlyProperty 的 getValue 方法
     println(delegate1.key1)
     println(delegate1.key2)
     println(delegate1.key3)
 
     println("-----111------")
 
+    val map = delegate1.map
     println(map["key1"])
     println(map["key2"])
     println(map["key3"])
@@ -99,13 +104,14 @@ fun main() {
 
     // 读写属性对外暴露 MutableMap
     val delegate2 = DelegateMutableMap(mutableMapOf())
-    val mutableMap = delegate2.map
+    // 相当于调用 ReadWriteProperty 的 setValue 方法
     delegate2.key1 = 100
     delegate2.key2 = "key2 value"
     delegate2.key3 = false
 
     println("-----222------")
 
+    val mutableMap = delegate2.map
     println(mutableMap["key1"])
     println(mutableMap["key2"])
     println(mutableMap["key3"])
@@ -172,9 +178,21 @@ class Demo {
 }
 
 /**
+ * kotlin 使用 object 定义单例类
+ */
+object DemoManager {
+
+    var field = "string value"
+
+    fun method() {
+        println("invoke method")
+    }
+}
+
+/**
  * 定义枚举
  */
-enum class Week(val text: String = "") {
+enum class Week(val text: String) {
     Monday("星期一"),
     Tuesday("星期二"),
     Wednesday("星期三"),
@@ -186,20 +204,29 @@ enum class Week(val text: String = "") {
 
 
 /**
- * kotlin 定义类委托
+ * kotlin 定义接口
  */
 interface Factory {
     fun produce()
 }
 
+/**
+ * 美食工厂，实现工厂的方法
+ */
 class FoodFactory : Factory {
     override fun produce() {
         println("生产美食")
     }
 }
 
+/**
+ * Agent1 实现了 Factory 接口，但委托给 FoodFactory 去实现
+ */
 class Agent1(factory: FoodFactory) : Factory by factory
 
+/**
+ * Agent2 实现了 Factory 接口，但委托给 FoodFactory 去实现，重写了接口定义的方法
+ */
 class Agent2 : Factory by FoodFactory() {
     override fun produce() {
         println("Agent2 自己 生产美食")
