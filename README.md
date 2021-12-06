@@ -21,6 +21,32 @@
 - [Blog link](https://blog.csdn.net/java_android_man/article/details/121643759)
 - [TestArray.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestArray.kt)
 
+
+### 5. Kotlin 集合 Set、List、Map 及常用方法
+- [Blog link](https://blog.csdn.net/java_android_man/article/details/121687557)
+- [TestCollection.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestCollection.kt)
+
+
+### 6. Kotlin 函数与 Lambda 表达式
+- [Blog link](https://blog.csdn.net/java_android_man/article/details/121708898)
+- [TestArray.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestFunction.kt)
+
+
+### 7. Kotlin Kotlin 类、属性、方法、继承、多态
+- [Blog link](https://blog.csdn.net/java_android_man/article/details/121720459)
+- [TestArray.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestClass.kt)
+
+
+### 8. Kotlin 扩展、抽象类、接口、内部类、嵌套类
+- [Blog link](https://blog.csdn.net/java_android_man/article/details/121734474)
+- [TestArray.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/Ext&Abstract&Interface&Inner&Nested.kt)
+
+
+### 9. Kotlin 对象、枚举、委托
+- [Blog link](https://blog.csdn.net/java_android_man/article/details/121742607)
+- [TestArray.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/Companion&Object&Enum&Delegate&Lazy.kt)
+
+
 <br>
 
 ## 二、Kotlin项目开发规范总结：
