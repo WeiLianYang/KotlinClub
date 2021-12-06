@@ -88,6 +88,7 @@ fun main() {
     // map 委托
     // 只读属性对外暴露 Map
     val delegate1 = DelegateMap(mapOf("key1" to 1, "key2" to "str", "key3" to true))
+
     // 相当于调用 ReadOnlyProperty 的 getValue 方法
     println(delegate1.key1)
     println(delegate1.key2)
@@ -104,6 +105,7 @@ fun main() {
 
     // 读写属性对外暴露 MutableMap
     val delegate2 = DelegateMutableMap(mutableMapOf())
+
     // 相当于调用 ReadWriteProperty 的 setValue 方法
     delegate2.key1 = 100
     delegate2.key2 = "key2 value"
@@ -171,6 +173,8 @@ class Demo {
         // 定义常量
         const val KEY_NAME = "key_name"
 
+        // kotlin 模拟静态方法
+        @JvmStatic // 加注解实现和 java 中使用静态方法相同效果
         fun method() {
             println("invoke companion method")
         }
