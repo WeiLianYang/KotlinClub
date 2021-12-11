@@ -54,12 +54,12 @@
 
 ### 11. Kotlin 泛型 型变、逆变、星号投影、reified、泛型上限
 - [Blog link](https://blog.csdn.net/java_android_man/article/details/121845379)
-- [TestException.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestGeneric.kt)
+- [TestGeneric.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestGeneric.kt)
 
 
 ### 12. Kotlin 注解
 - [Blog link](https://blog.csdn.net/java_android_man/article/details/121865299)
-- [TestException.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestAnnotation.kt)
+- [TestAnnotation.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestAnnotation.kt)
 
 
 ### 13. Kotlin 与 Java 相互调用
