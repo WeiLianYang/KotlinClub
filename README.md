@@ -51,6 +51,24 @@
 - [Blog link](https://blog.csdn.net/java_android_man/article/details/121757096)
 - [TestException.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestException.kt)
 
+
+### 11. Kotlin 泛型 型变、逆变、星号投影、reified、泛型上限
+- [Blog link](https://blog.csdn.net/java_android_man/article/details/121845379)
+- [TestException.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestGeneric.kt)
+
+
+### 12. Kotlin 注解
+- [Blog link](https://blog.csdn.net/java_android_man/article/details/121865299)
+- [TestException.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestAnnotation.kt)
+
+
+### 13. Kotlin 与 Java 相互调用
+- [Blog link](https://blog.csdn.net/java_android_man/article/details/121879077)
+- [JavaDemo.java](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/JavaDemo.java)
+- [TestCallKotlin.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestCallKotlin.kt)
+- [TestCallEachOther.kt](https://github.com/WeiLianYang/KotlinDemo/blob/master/src/com/william/testkt/TestCallEachOther.kt)
+
+
 <br>
 
 ## 二、Kotlin项目开发规范总结：
