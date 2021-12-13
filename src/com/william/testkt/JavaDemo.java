@@ -17,7 +17,9 @@
 package com.william.testkt;
 
 import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
 
 import java.util.Arrays;
 
@@ -66,6 +68,8 @@ public class JavaDemo {
         KotlinObject.method2();
 
         // 6. 调用 kotlin 的 lambda
+
+        // 参数为 lambda 表达式，入参为 Int，返回值为 Unit
         KotlinObject.method3(new Function1<Integer, Unit>() {
             @Override
             public Unit invoke(Integer integer) {
@@ -74,11 +78,30 @@ public class JavaDemo {
             }
         });
 
+        // 参数为 lambda 表达式，入参为 Boolean，返回值为 String
         KotlinObject.method4(new Function1<Boolean, String>() {
             @Override
             public String invoke(Boolean param) {
                 System.out.println("invoke param: " + param);
                 return param ? "success" : "failed";
+            }
+        });
+
+        // 参数为 lambda 表达式，无入参，返回值为 Unit
+        KotlinObject.method5(new Function0<Unit>() {
+            @Override
+            public Unit invoke() {
+                System.out.println("invoke method5 no params");
+                return null;
+            }
+        });
+
+        // 参数为 lambda 表达式，入参为 Int, String，返回值为 Boolean
+        KotlinObject.method6(new Function2<Integer, String, Boolean>() {
+            @Override
+            public Boolean invoke(Integer integer, String s) {
+                System.out.println("invoke method6 params:integer=" + integer + ", s=" + s);
+                return integer > 0;
             }
         });
 

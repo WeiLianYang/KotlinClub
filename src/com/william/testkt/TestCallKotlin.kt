@@ -50,15 +50,27 @@ object KotlinObject {
         println("call method2")
     }
 
-    // 参数为 lambda 表达式，入参为 Int，返回值为 Unit
+    // 参数为 lambda 表达式，入参为 Int，返回值为 Unit，在定义时，也可以不写等号后面的表达式
     @JvmStatic
     fun method3(param: (Int) -> Unit = {}) {
         param.invoke(101)
     }
 
-    // 参数为 lambda 表达式，入参为 Boolean，返回值为 String
+    // 参数为 lambda 表达式，入参为 Boolean，返回值为 String，在定义时，也可以不写等号后面的表达式
     @JvmStatic
     fun method4(param: (Boolean) -> String = { "" }) {
         param.invoke(true)
+    }
+
+    // 参数为 lambda 表达式，无入参，返回值为 Unit
+    @JvmStatic
+    fun method5(param: () -> Unit) {
+        param.invoke()
+    }
+
+    // 参数为 lambda 表达式，入参为 Int, String，返回值为 Boolean
+    @JvmStatic
+    fun method6(param: (Int, String) -> Boolean) {
+        param.invoke(100, "string value")
     }
 }
