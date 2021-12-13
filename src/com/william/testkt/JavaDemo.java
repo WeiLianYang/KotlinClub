@@ -105,6 +105,17 @@ public class JavaDemo {
             }
         });
 
+        // 调用 kotlin 的重载方法
+        demo.overloadMethod1(0);
+        demo.overloadMethod1(0, 1);
+        demo.overloadMethod1(0, 1, "");
+
+        // 调用 kotlin 的重载方法
+        demo.overloadMethod2();
+        demo.overloadMethod2(0);
+        demo.overloadMethod2(0, 1);
+        demo.overloadMethod2(0, 1, "");
+
     }
 
 }

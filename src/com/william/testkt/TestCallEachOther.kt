@@ -49,15 +49,27 @@ class KotlinDemo {
     }
 
     /**
-     * @JvmOverloads 注解会生成多个重载的方法
+     * @JvmOverloads 注解会生成以下重载方法
+     * 当参数有默认值时，会生成对应的重载方法。注意 p0 没有默认值
      *
-     * fun overloadMethod(p0: Int = 0)
-     * fun overloadMethod(p0: Int = 0, p1: Int = 1)
-     * fun overloadMethod(p0: Int = 0, p1: Int = 1, p2: String = "")
-     *
+     * void overloadMethod1(int p0)
+     * void overloadMethod1(int p0, int p1)
+     * void overloadMethod1(int p0, int p1, String p2)
      */
     @JvmOverloads
-    fun overloadMethod(p0: Int = 0, p1: Int = 1, p2: String = "") {
+    fun overloadMethod1(p0: Int, p1: Int = 1, p2: String = "") {
+    }
+
+    /**
+     * @JvmOverloads 注解会生成以下重载方法
+     *
+     * void overloadMethod2()
+     * void overloadMethod2(int p0)
+     * void overloadMethod2(int p0, int p1)
+     * void overloadMethod2(int p0, int p1, String p2)
+     */
+    @JvmOverloads
+    fun overloadMethod2(p0: Int = 0, p1: Int = 1, p2: String = "") {
     }
 
     // kotlin 没有 checked 异常，使用 @Throws 抛出异常
