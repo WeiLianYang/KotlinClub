@@ -18,12 +18,7 @@
  * main
  * @author William
  */
-fun main(args: Array<String>) {
-    println("hello kotlin")
-
-    val result: Boolean? = null
-    (result == true).apply {
-        println(this)
-    }
-    println(result)
+fun main() {
+    val list = arrayListOf(1, 2, 3)
+    println(list.toTypedArray().contentToString())
 }

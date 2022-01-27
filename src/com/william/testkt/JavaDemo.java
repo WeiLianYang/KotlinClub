@@ -22,6 +22,9 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 
 import java.util.Arrays;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class JavaDemo {
 
@@ -115,7 +118,38 @@ public class JavaDemo {
         demo.overloadMethod2(0);
         demo.overloadMethod2(0, 1);
         demo.overloadMethod2(0, 1, "");
+    }
 
+    public static void acceptInput() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("input keyword: ");
+        while (scan.hasNext()) {
+            String str = scan.next();
+            System.out.println("input keyword ===>" + str);
+            boolean result = matchKeyword(str);
+            System.out.println("match result: " + result);
+
+            System.out.println("-------------------");
+            System.out.println("input keyword: ");
+        }
+    }
+
+    public static boolean matchKeyword(String keyword) {
+        if (keyword.isEmpty()) {
+            return false;
+        }
+        String text = "上海市闵行区青年路与横沥路路口";
+        String rule = "[" + keyword + "]";
+        System.out.println("rule: " + rule);
+        Pattern pattern = Pattern.compile(rule);
+        Matcher m = pattern.matcher(text);
+        if (m.find()) {
+            System.out.println("match success");
+            return true;
+        } else {
+            System.out.println("match failed");
+            return false;
+        }
     }
 
 }
