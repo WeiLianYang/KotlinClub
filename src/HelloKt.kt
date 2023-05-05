@@ -21,4 +21,12 @@
 fun main() {
     val list = arrayListOf(1, 2, 3)
     println(list.toTypedArray().contentToString())
+
+    val a = 0.and(1) // 0
+    val b = 1.and(1) // 1
+    val c = 2.and(1) // 0
+    val d = 3.and(1) // 1
+
+    println("a=$a, b=$b, c=$c, d=$d")
+
 }
